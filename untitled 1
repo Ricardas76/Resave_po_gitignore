@@ -1,0 +1,9 @@
+
+npm install paketo-pavadinimas 
+npm install pac1 pac2 pac3  //galima instaliuoti kelis is karto
+npm i pac1 // install galima keisti i "i" raide
+
+npm install --save-dev nodemon  //visi žemiau 4 daro tą patį
+npm i --save-dev nodemon
+npm install -D nodemon
+npm i -D nodemon
