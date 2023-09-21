@@ -41,6 +41,20 @@ console.log ( "Sudauginom:", exp1, "     Pakelem laipsniu:", exp2);
 
 const txt1 = "tekstas1";
 const txt2 = 'tekstas2';
-
+skaiciai_visokie = 5-6+(-8)-(-15)-(100*2);
 console.log (txt1);
 console.log (txt2);
+console.log ("skaiciai_visokie:", skaiciai_visokie);
+const begalybe = Infinity
+const minusBegalybe = - Infinity
+const x = 5 / 0
+const k = -5 / 0
+console.log(k)
+//not-a-number = NaN
+const n = NaN
+console.log(n, NaN)
+cia = 5**5
+console.log(cia)
+//skaiciuojant liekana naudojamas zenklas %
+const liekana = 7 % 5
+console.log(liekana)
