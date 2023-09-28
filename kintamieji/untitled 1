@@ -10,3 +10,9 @@ npm i -D nodemon
 
 //.gitignore faile .DS_Store yra informacija apie asmeninį kompiuterį
 
+ //npm run array paleidzia scripta
+    //"array": "nodemon ./kintamieji/array.js",
+
+    //pavyzdziai
+//https://www.w3resource.com/javascript-exercises
+//http://eulerproject.net

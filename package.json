@@ -3,7 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
+    "scripts": {
+    "for": "nodemon ./ciklas/for.js",
+    "if": "nodemon ./palyginimas/if.js",
+    "function": "nodemon ./funkcijos/function.js",
+    "object": "nodemon ./kintamieji/object.js",
+    "array": "nodemon ./kintamieji/array.js",
+    "boolean": "nodemon ./kintamieji/boolean.js",
+    "string": "nodemon ./kintamieji/string.js",
     "number": "nodemon ./kintamieji/number.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

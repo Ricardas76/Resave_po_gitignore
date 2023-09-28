@@ -57,4 +57,48 @@ cia = 5**5
 console.log(cia)
 //skaiciuojant liekana naudojamas zenklas %
 const liekana = 7 % 5
-console.log(liekana)
+console.log(liekana);
+
+console.clear()
+
+
+let piniginee = 0;
+piniginee = piniginee + 5;
+piniginee += 5; // += prideda prie paties saves
+piniginee += 5;
+piniginee += -3;
+piniginee += 5;
+piniginee += -8;
+
+console.log("Pinigineje yra:" , piniginee);
+
+let index = 0;
+console.log ('index',  index);
+
+index = index + 1;
+console.log ('index',  index);
+
+index ++;
+console.log ('index',  index);
+
+++index;
+console.log ('index',  index);
+// ++didina vienu vienetu , o  -- mažina
+let indeks = 0;
+console.log ('indeks',  indeks); //0
+console.log ('indeks',  indeks++); //0 o atspausdinus prideda 1
+console.log ('indeks',  indeks); //1
+console.log ('indeks',  ++indeks);//1 prideda pries spausdinant ir bus 2
+
+let indeksas = 0;
+console.log ('indeksas',  indeksas--);
+console.log ('indeksas',  --indeksas); 
+console.log ('indeksas',  indeksas--); 
+console.log ('indeksas',  indeksas);
+
+let didinu = 0;
+console.log ('didinu',  ++didinu);
+
+
+test=0.2+0.5;
+console.log(test.toFixed(2));  //suapvalina iki 2 skaiciu po kablelio
