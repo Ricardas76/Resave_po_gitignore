@@ -34,3 +34,12 @@ console.log(looksLikeName("Jo3as"), true);
 console.log(looksLikeName("MaryPte"), true);
 console.log(looksLikeName("labas"), false);
 console.log(looksLikeName("A5ZU0las"), false);
+
+console.clear();
+
+function isName() {
+return "ok";
+}
+console.log(isName());
+console.log(isName("Jonas"));
+
