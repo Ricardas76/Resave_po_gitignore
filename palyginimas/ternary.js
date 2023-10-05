@@ -39,3 +39,14 @@ const q21 = (0 > 1)
                     : 5 
                 : 9;
 console.log(">>>3>>q>>", q21);
+//  =>   leidžia nerašyti riestinių skliaustų ir return
+//const firsLetter2 = ":"Labas"
+//console.log(firstLetter2("Labas"));
+
+/*
+galima ilgas zinutes priskirti ir cikle pakeisti i trumpesnes
+const errors = {
+    notstring: "zinute ... . .. . .. . .. "
+    empty: "zinute2"
+}
+*/
