@@ -1,29 +1,35 @@
-const tekstas = "2406238061735524442108005825219517619673640048614356513686024026186203580180226425633230402259117978930269221362210921769678187308527269240482956171059301002";
-function duSkaiciai(tekstas) {
-    const raides = tekstas.split('');
+const input = "240623806173552444210800582521951761967364004861435651368602402618620358018026425633230402259117978930269221362210921769678187308527269240482956171059301002";
+
+function duSkaiciai(input) {
+    const raides = input.split('');
     const poros = [];
 
-for (let i = 0; i < raides.length - 1; i++) {
+    for (let i = 0; i < raides.length - 1; i++) {
         const pora = raides.slice(i, i + 2).join('');
         poros.push(pora);
     }
 
-const pasikartojimai = {};
+    const pasikartojimai = {};
     for (const pora of poros) {
         pasikartojimai[pora] = (pasikartojimai[pora] || 0) + 1;
     }
 
-let besikartojantiPora = null;
-let poruSkaicius = 0;
+    let manoPoros = [];
+    let maxSkaicius = 0;
 
-for (const pora in pasikartojimai) {
-    if (pasikartojimai[pora] > poruSkaicius) {
-        besikartojantiPora = pora;
-        poruSkaicius = pasikartojimai[pora];
+    for (const pora in pasikartojimai) {
+        if (pasikartojimai[pora] > maxSkaicius) {
+            manoPoros = [pora];
+            maxSkaicius = pasikartojimai[pora];
+        } else if (pasikartojimai[pora] === maxSkaicius) {
+            manoPoros.push(pora);
         }
     }
-    return { pora: besikartojantiPora, kartojimuSkaicius: poruSkaicius };
+
+    return { poros: manoPoros, kartojimuSkaicius: maxSkaicius };
 }
-const rezultatai = duSkaiciai(tekstas);
-console.log('Dažniausiai pasikartojanti pora:', rezultatai.pora);
+
+const rezultatai = duSkaiciai(input);
+
+console.log('Dažniausiai pasikartojanti/-čios pora/-os:', rezultatai.poros);
 console.log('Pasikartojimų skaičius:', rezultatai.kartojimuSkaicius);
