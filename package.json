@@ -3,11 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-    "scripts": {
+  "scripts": {
+    "dev": "dead-server --host=localhost --port=4610",
+    "zaidimas": "nodemon ./darbeliai/zaidimas.js",
+    "darbeliai:darbas": "nodemon ./darbeliai/darbas4.js",
     "darbeliai:pazymiai": "nodemon ./darbeliai/pazymiai.js",
     "method:array": "nodemon ./method/array.js",
     "method:string": "nodemon ./method/string.js",
     "method:number": "nodemon ./method/number.js",
+    "array-loops": "nodemon ./ciklas/array-loops.js",
     "for": "nodemon ./ciklas/for.js",
     "if": "nodemon ./palyginimas/if.js",
     "ternary": "nodemon ./palyginimas/ternary.js",
@@ -24,6 +28,7 @@
   "author": "Ricardas",
   "license": "visiems",
   "devDependencies": {
+    "dead-server": "^1.0.9",
     "nodemon": "^3.0.1"
   }
 }
